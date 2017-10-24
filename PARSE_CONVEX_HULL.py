@@ -31,6 +31,6 @@ def msg(file_key,file_extract):
             a=int(lines[2])+int(lines[3])+int(7.0)
             keyword = 'EA'+str(lines[0])
             subprocess.call(["/usr/bin/grep","-A",str(a), str(keyword),file_extract])
-            return TRUE
+    return TRUE
 
 msg('extended_convex_hull', 'GPa')
