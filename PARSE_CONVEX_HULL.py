@@ -1,5 +1,6 @@
 import subprocess
 import argparse
+import sys
 
 parser = argparse.ArgumentParser(description='''
 ACS Programming Challenge |
@@ -11,9 +12,6 @@ parser.add_argument('-f', metavar='files', type=str, nargs=1,
                     help='Input file for files, e.g. -f files.txt. Required')
 parser.add_argument('-n', metavar='nodes', type=str, nargs=1,
                     help='Input file for nodes, e.g. -n nodes.txt. Required')
-parser.add_argument('-o', metavar='result', type=str, nargs=1,
-                    help='Output file, e.g. -o result.txt. Default: standard output')
-
 
 args = parser.parse_args()
 if args.f and args.n:
